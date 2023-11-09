@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFFDD0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* slider */
+.slider{
+    width: 800px;
+    height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  0 8px 8px 0 rgba(255, 114, 0, 0.2), 0 6px 20px 0 rgba(255, 114, 0, 0.19);
+    margin-right: 270px;
+    margin-bottom: 25px;
+    margin-top: 45px;
+    margin-left: 40px;
+    align-items: center;
+    /* position:absolute; */
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.5s;
+  }
+  
+  .slide img{
+    width: 900px;
+    height: 530px;
+  }
+
+
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    /* margin-left: 100px; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* justify-content: center; */
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #dc7140;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0px;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #dc7140;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #dc7140;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #dc7140;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #dc7140;
+  }
+  .events{
+    align-items: center;
+    float: right;
+    margin-left:70px;
+    margin-right: 100px;
+    margin-top: -570px;
+}
+.events h2{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 380px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    
+}
+.events span{
+    color: #ff7200;
+} 
+.container { height: 440px; width: 880px; margin-right: -60px; background-color: #E9FFD0; display: flex; justify-content:right; /* Add more styles as needed */ }
+      .events-layer h4{ font-size: 1.6rem ; 
+        margin-left: 20px;
+        color: #ff7200; margin-bottom: 0px; } 
+        .events-layer p{ font-size: 23px;
+            margin-left: 20px;
+            margin-right: 20px;
+}
+@media screen and (max-width: 451px){
+    /* mobile */
+    .slider{
+        margin-left: 145px;
+        height: 530px;
+        margin-top:130px ;
+    }
+    .events {
+    align-items: center;
+    float: right;
+    margin-left: 70px;
+    margin-right: -360px;
+    margin-top: -22px;
+}
+.events-layer{
+
+    margin-left: 100px;
+    margin-top: 18px;
+    margin-right: -426px;
+
+}
+.events-layer h4 {
+    font-size: 2.6rem;}
+    .events-layer p {
+    font-size: 27px;}
+    .container {
+    height: 151px;
+    width: 848px;
+    margin-right: -60px;
+    background-color: #E9FFD0;
+    display: flex;
+    justify-content: right;
+}
+.button {
+    height: 123px;
+    widows: 100px;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.events h2 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 350px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 33px;
+}
