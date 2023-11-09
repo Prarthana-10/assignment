@@ -11,8 +11,7 @@ body{
 }
 /* slider */
 .slider{
-    width: 800px;
-    height: 530px;
+        width: 698px;    height: 505px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow:  0 8px 8px 0 rgba(255, 114, 0, 0.2), 0 6px 20px 0 rgba(255, 114, 0, 0.19);
@@ -31,7 +30,7 @@ body{
   }
   
   .slides input{
-    display: none;
+    display: none;  
   }
   
   .slide{
@@ -40,9 +39,7 @@ body{
   }
   
   .slide img{
-    width: 900px;
-    height: 530px;
-  }
+   width: 698px;        height: 507px;  }
 
 
   /*css for manual slide navigation*/
@@ -59,6 +56,8 @@ body{
   .manual-btn{
     border: 2px solid #000000;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
@@ -74,6 +73,7 @@ body{
   }
   
   #radio1:checked ~ .first{
+    flex-direction: column;
     margin-left: 0px;
   }
   
@@ -86,6 +86,9 @@ body{
   }
   
   #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  #radio5:checked ~ .first{
     margin-left: -60%;
   }
   
@@ -125,6 +128,9 @@ body{
   #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #dc7140;
   }
+  #radio5:checked ~ .navigation-auto .auto-btn4{
+    background: #dc7140;
+  }
   .events{
     align-items: center;
     float: right;
@@ -132,6 +138,9 @@ body{
     margin-right: 100px;
     margin-top: -570px;
 }
+.events-layer{
+    margin-left: 769px;
+    margin-top: -313px;}
 .events h2{
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -144,61 +153,114 @@ body{
 .events span{
     color: #ff7200;
 } 
-.container { height: 440px; width: 880px; margin-right: -60px; background-color: #E9FFD0; display: flex; justify-content:right; /* Add more styles as needed */ }
+.container { height: 119px;
+    width: 883px;
+    margin-right: -49px; background-color: #E9FFD0; display: flex; justify-content:right; /* Add more styles as needed */ }
       .events-layer h4{ font-size: 1.6rem ; 
         margin-left: 20px;
         color: #ff7200; margin-bottom: 0px; } 
         .events-layer p{ font-size: 23px;
             margin-left: 20px;
+            color: #ff7200; 
             margin-right: 20px;
 }
-@media screen and (max-width: 451px){
-    /* mobile */
-    .slider{
-        margin-left: 145px;
-        height: 530px;
-        margin-top:130px ;
-    }
-    .events {
+@media screen and (max-width: 1200px) {
+    /* Normal Screen */
+.slider {
+    width: 842px;
+    height: 580px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px 0 rgba(255, 114, 0, 0.2), 0 6px 20px 0 rgba(255, 114, 0, 0.19);
+    margin-right: 253px;
+    margin-bottom: 25px;
+    margin-top: 45px;
+    margin-left: 108px;
+    align-items: center;
+    /* position: absolute; */
+}
+.slide img {
+    width: 843px;
+    height: 580px;
+}
+.events {
     align-items: center;
     float: right;
-    margin-left: 70px;
-    margin-right: -360px;
-    margin-top: -22px;
+    margin-left: 35px;
+    margin-right: 254px;
+    margin-top: 6px;
 }
-.events-layer{
-
-    margin-left: 100px;
-    margin-top: 18px;
-    margin-right: -426px;
-
-}
-.events-layer h4 {
-    font-size: 2.6rem;}
-    .events-layer p {
-    font-size: 27px;}
-    .container {
-    height: 151px;
-    width: 848px;
-    margin-right: -60px;
+.container {
+    height: 119px;
+    width: 883px;
+    margin-right: -49px;
     background-color: #E9FFD0;
     display: flex;
     justify-content: right;
 }
+.events-layer {
+    margin-left: 72px;
+    margin-top: -80px;
+}.events-layer .button {
+    margin-right: -144px;
+    margin-left: 170px;
+    background-color: #C4A484;
+    border-radius: 50%;
+}
+.events-layer p {
+    font-size: 26px;
+    margin-left: 20px;
+    color: #ff7200;
+    margin-right: 20px;
+}
+@media screen and (max-width: 451px){
+    /* mobile */
+    .slider {
+    width: 781px;
+    height: 567px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 8px 0 rgba(255, 114, 0, 0.2), 0 6px 20px 0 rgba(255, 114, 0, 0.19);
+    margin-right: 270px;
+    margin-bottom: 25px;
+    margin-top: 45px;
+    margin-left: 21px;    align-items: center;
+    /* position: absolute; */
+}
+   .events {
+    align-items: center;
+    float: right;
+    margin-left: 20px;
+    margin-right: -461px;
+    margin-top: -26px;
+}
+.events-layer {
+    margin-left: -170px;
+    margin-top: -14px;
+}.events-layer h4 {
+    font-size: 2.6rem;}
+    .events-layer p {
+        font-size: 49px;
+    margin-left: 239px;
+    color: #ff7200;
+    margin-right: -493px;}
+.container {
+    height: 155px;
+    width: 888px;
+  margin-right: -5px;    background-color: #E9FFD0;
+    display: flex;
+    justify-content: right;
+}
 .button {
-    height: 123px;
-    widows: 100px;
+    height: 106px;
+    width: 182px;
     border: 2px solid black;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+    font-size: 24px;}
 .events h2 {
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -206,4 +268,5 @@ body{
     color: #ffffff;
     font-family: Arial;
     font-size: 33px;
+}
 }
